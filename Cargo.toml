@@ -1,0 +1,21 @@
+[package]
+name = "paste"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.5.0-rc.2"
+
+[dependencies.uuid]
+version = "1.0.0"
+features = ["v4", "fast-rng"]
+
+[dependencies.sqlx]
+version = "0.5.13"
+features = ["migrate"]
+
+[dependencies.rocket_db_pools]
+version = "0.1.0-rc.2"
+features = ["sqlx_sqlite"]
